@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapa Camping</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .camping-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .camping-img {
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .hotspot {
+      position: absolute;
+      cursor: pointer;
+      background: rgba(128, 128, 128, 0.4);
+      border-radius: 5px;
+    }
+
+    /* Tooltip */
+    .hotspot .tooltip {
+      visibility: hidden;
+      width: 220px;
+      background: #fff;
+      border: 1px solid #ccc;
+      color: #000;
+      text-align: center;
+      padding: 8px;
+      border-radius: 8px;
+      position: absolute;
+      z-index: 10;
+      top: 110%; /* debajo del cuadro */
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .hotspot:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .tooltip img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 6px;
+    }
+
+    .tooltip button {
+      background: #2a8c2a;
+      color: white;
+      padding: 6px 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .tooltip button:hover {
+      background: #246e24;
+    }
+  </style>
+</head>
+<body>
+  <div class="camping-container">
+    <img src="Camping Layout.png" alt="Mapa Camping" class="camping-img">
+
+    <!-- Sitios de abajo -->
+    <div class="hotspot" style="top:70%; left:5%; width:7%; height:10%;">
+      <div class="tooltip">
+        <img src="imagenes/s0.jpg" alt="Sitio S0">
+        <p><b>Sitio S0</b><br>Precio: $20.000 / noche</p>
+        <button onclick="window.open('formulario_reserva_s0.html','_blank')">Reservar</button>
+      </div>
+    </div>
+
+    <div class="hotspot" style="top:70%; left:15%; width:7%; height:10%;">
+      <div class="tooltip">
+        <img src="imagenes/s1.jpg" alt="Sitio S1">
+        <p><b>Sitio S1</b><br>Precio: $20.000 / noche</p>
+        <button onclick="window.open('formulario_reserva_s1.html','_blank')">Reservar</button>
+      </div>
+    </div>
+
+    <div class="hotspot" style="top:70%; left:25%; width:7%; height:10%;">
+      <div class="tooltip">
+        <img src="imagenes/s2.jpg" alt="Sitio S2">
+        <p><b>Sitio S2</b><br>Precio: $20.000 / noche</p>
+        <button onclick="window.open('formulario_reserva_s2.html','_blank')">Reservar</button>
+      </div>
+    </div>
+
+    <div class="hotspot" style="top:70%; left:35%; width:7%; height:10%;">
+      <div class="tooltip">
+        <img src="imagenes/s3.jpg" alt="Sitio S3">
+        <p><b>Sitio S3</b><br>Precio: $20.000 / noche</p>
+        <button onclick="window.open('formulario_reserva_s3.html','_blank')">Reservar</button>
+      </div>
+    </div>
+
+    <div class="hotspot" style="top:60%; left:45%; width:7%; height:10%;">
+      <div class="tooltip">
+        <img src="imagenes/s5.jpg" alt="Sitio S5">
+        <p><b>Sitio S5</b><br>Precio: $20.000 / noche</p>
+        <button onclick="window.open('formulario_reserva_s5.html','_blank')">Reservar</button>
+      </div>
+    </div>
+
+    <div class="hotspot" style="top:60%; left:55%; width:7%; height:10%;">
+      <div class="tooltip">
+        <img src="imagenes/s6.jpg" alt="Sitio S6">
+        <p><b>Sitio S6</b><br>Precio: $20.000 / noche</p>
+        <button onclick="window.open('formulario_reserva_s6.html','_blank')">Reservar</button>
+      </div>
+    </div>
+
+    <div class="hotspot" style="top:60%; left:65%; width:7%; height:10%;">
+      <div class="tooltip">
+        <img src="imagenes/s8.jpg" alt="Sitio S8">
+        <p><b>Sitio S8</b><br>Precio: $20.000 / noche</p>
+        <button onclick="window.open('formulario_reserva_s8.html','_blank')">Reservar</button>
+      </div>
+    </div>
+
+    <div class="hotspot" style="top:60%; left:75%; width:7%; height:10%;">
+      <div class="tooltip">
+        <img src="imagenes/s9.jpg" alt="Sitio S9">
+        <p><b>Sitio S9</b><br>Precio: $20.000 / noche</p>
+        <button onclick="window.open('formulario_reserva_s9.html','_blank')">Reservar</button>
+      </div>
+    </div>
+
+    <div class="hotspot" style="top:80%; left:50%; width:10%; height:12%;">
+      <div class="tooltip">
+        <img src="imagenes/playa.jpg" alt="La Playa">
+        <p><b>La Playa</b><br>Precio: $20.000 / noche</p>
+        <button onclick="window.open('formulario_reserva_playa.html','_blank')">Reservar</button>
+      </div>
+    </div>
+
+    <!-- Sitios de arriba -->
+    <div class="hotspot" style="top:40%; left:60%; width:7%; height:8%;">
+      <div class="tooltip">
+        <img src="imagenes/s7.jpg" alt="Sitio S7">
+        <p><b>Sitio S7</b><br>Precio: $25.000 / noche</p>
+        <button onclick="window.open('formulario_reserva_s7.html','_blank')">Reservar</button>
+      </div>
+    </div>
+    <div class="hotspot" style="top:40%; left:68%; width:7%; height:8%;">
+      <div class="tooltip">
+        <img src="imagenes/s7.jpg" alt="Sitio S7">
+        <p><b>Sitio S7</b><br>Precio: $25.000 / noche</p>
+        <button onclick="window.open('formulario_reserva_s7.html','_blank')">Reservar</button>
+      </div>
+    </div>
+
+    <div class="hotspot" style="top:38%; left:78%; width:7%; height:8%;">
+      <div class="tooltip">
+        <img src="imagenes/s10.jpg" alt="Sitio S10">
+        <p><b>Sitio S10</b><br>Precio: $25.000 / noche</p>
+        <button onclick="window.open('formulario_reserva_s10.html','_blank')">Reservar</button>
+      </div>
+    </div>
+
+    <div class="hotspot" style="top:38%; left:87%; width:7%; height:8%;">
+      <div class="tooltip">
+        <img src="imagenes/s11.jpg" alt="Sitio S11">
+        <p><b>Sitio S11</b><br>Precio: $25.000 / noche</p>
+        <button onclick="window.open('formulario_reserva_s11.html','_blank')">Reservar</button>
+      </div>
+    </div>
+
+    <!-- Zonas comunes -->
+    <div class="hotspot" style="top:20%; left:15%; width:15%; height:12%;">
+      <div class="tooltip">
+        <img src="imagenes/estacionamientos.jpg" alt="Estacionamientos">
+        <p><b>Estacionamientos</b><br>Acceso común</p>
+      </div>
+    </div>
+
+    <div class="hotspot" style="top:25%; left:35%; width:12%; height:12%;">
+      <div class="tooltip">
+        <img src="imagenes/banos.jpg" alt="Baños y Lavadero">
+        <p><b>Baños y Lavadero</b><br>Acceso común</p>
+      </div>
+    </div>
+
+    <div class="hotspot" style="top:30%; left:50%; width:6%; height:6%;">
+      <div class="tooltip">
+        <img src="imagenes/gas.jpg" alt="Gas">
+        <p><b>Gas</b><br>Acceso común</p>
+      </div>
+    </div>
+
+    <div class="hotspot" style="top:35%; left:50%; width:6%; height:6%;">
+      <div class="tooltip">
+        <img src="imagenes/reciclaje.jpg" alt="Reciclaje">
+        <p><b>Reciclaje</b><br>Acceso común</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
